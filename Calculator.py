@@ -42,7 +42,7 @@ while 1 > 0:
         else:
             print('''
                     We can only solve quadratic and linear equations right now!
-                    Please answer as quadratic or linear...
+                    Please answer as quadratic or linear.....
                     ''')
 
 
