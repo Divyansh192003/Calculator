@@ -4,6 +4,98 @@ import math
 print('Calculator version 2.0')
 time.sleep(1)
 while 1 > 0:
+    def ceil(x):
+        return math.ceil(x)
+
+
+    def floor(x):
+        return math.floor(x)
+
+
+    def absolute_value(x):
+        return math.fabs(x)
+
+
+    def factorial(x):
+        return math.factorial(x)
+
+
+    def e_powerx(x):
+        return math.exp(x)
+
+
+    def nat_log(x):
+        return math.log(x,2.71)
+
+
+    def common_log(x):
+        return math.log(x,10)
+
+
+    def sqrt(x):
+        return math.sqrt(x)
+
+
+    def sin(x):
+        return math.sin(x)
+
+
+    def cos(x):
+        return math.cos(x)
+
+
+    def tan(x):
+        return math.tan(x)
+
+
+    def cosec(x):
+        return cosec(x)
+
+
+    def sec(x):
+        return sec(x)
+
+
+    def cot(x):
+        return cot(x)
+
+
+    def gcd(first_number,second_number):
+        return math.gcd(first_number,second_number)
+
+
+    def log(number,base):
+        return math.log(number,base)
+
+
+    def sum(first_number,second_number):
+        return first_number+second_number
+
+
+    def difference(first_number, second_number):
+        if first_number > second_number:
+            return first_number - second_number
+        if first_number<second_number:
+            return second_number - first_number
+
+
+    def subtraction(first_number, second_number):
+        return first_number - second_number
+
+
+    def multiplication(first_number,second_number):
+        return first_number*second_number
+
+
+    def division(first_number,second_number):
+        return first_number/second_number
+
+
+
+
+
+
+
 
     print('''
                     Press 1 for solving an equation
@@ -47,7 +139,66 @@ while 1 > 0:
 
 
     elif category == 0:
-        pass
+        type = input('Do you want to solve for a function (involving a single variable) :').lower()
+        if type == 'yes':
+            time.sleep(1)
+            print('''The functions available with us are:'
+                  1. ceiling function
+                  2. floor function
+                  3. absolute value
+                  4. factorial
+                  5. e to the power x
+                  6. natural logarithm
+                  7. common logarithm
+                  8. square root 
+                  9. cosine 
+                 10. sine
+                 11. tangent
+                 12. cotangent
+                 13. secant
+                 14. cosecant 
+                  ''')
+            function = eval(input(' Please enter the function you want to evaluate:')).lower()
+            number = eval(input('Enter the number:'))
+            if function == 'ceiling function' :
+                print(ceil(number))
+            elif function == 'floor function' :
+                print(floor(number))
+            elif function == 'absolute value':
+                print(absolute_value(number))
+            elif function == 'factorial' :
+                print(factorial(number))
+            elif function == 'e to the power x' :
+                print(e_powerx(number))
+            elif function == 'natural log':
+                print(nat_log(number))
+            elif function == 'common log ' :
+                print(common_log(number))
+            elif function == 'sqrt':
+                print(sqrt(number))
+            elif function == 'cos' :
+                print(cos(number))
+            elif function == 'sin' :
+                print(sin(number))
+            elif function == 'tan' :
+                print(tan(number))
+            elif function == 'cot' or 'cotangent':
+                print(cot(number))
+            elif function == 'sec' or 'secant':
+                print(sec(number))
+            elif function == 'cosec' or 'cosecant':
+                print(cosec(number))
+            else:
+                print('Invalid function')
+
+
+
+
+
+
+                                  
+                                  
+
     time.sleep(1)
     rerun = input('''Do you want to get more solutions? 
     Please answer in a Yes or No : ''').lower()
