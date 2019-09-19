@@ -4,60 +4,60 @@ import math
 print('Calculator version 2.0')
 time.sleep(1)
 while 1 > 0:
-    def ceil(x):
-        return math.ceil(x)
+    def ceil(x1):
+        return math.ceil(x1)
 
 
-    def floor(x):
-        return math.floor(x)
+    def floor(x2):
+        return math.floor(x2)
 
 
-    def absolute_value(x):
-        return math.fabs(x)
+    def absolute_value(x3):
+        return math.fabs(x3)
 
 
-    def factorial(x):
-        return math.factorial(x)
+    def factorial(x4):
+        return math.factorial(x4)
 
 
-    def e_powerx(x):
-        return math.exp(x)
+    def e_powerx(x5):
+        return math.exp(x5)
 
 
-    def nat_log(x):
-        return math.log(x,2.71)
+    def nat_log(x6):
+        return math.log(x6,2.71)
 
 
-    def common_log(x):
-        return math.log(x,10)
+    def common_log(x7):
+        return math.log(x7,10)
 
 
-    def sqrt(x):
-        return math.sqrt(x)
+    def sqrt(x8):
+        return math.sqrt(x8)
 
 
-    def sin(x):
-        return math.sin(x)
+    def sin(x9):
+        return math.sin(x9)
 
 
-    def cos(x):
-        return math.cos(x)
+    def cos(x10):
+        return math.cos(x10)
 
 
-    def tan(x):
-        return math.tan(x)
+    def tan(x11):
+        return math.tan(x11)
 
 
-    def cosec(x):
-        return cosec(x)
+    def cosec(x12):
+        return cosec(x12)
 
 
-    def sec(x):
-        return sec(x)
+    def sec(x13):
+        return sec(x13)
 
 
-    def cot(x):
-        return cot(x)
+    def cot(x14):
+        return cot(x14)
 
 
     def gcd(first_number,second_number):
@@ -68,27 +68,27 @@ while 1 > 0:
         return math.log(number,base)
 
 
-    def sum(first_number,second_number):
-        return first_number+second_number
+    def sum(first_number2,second_number2):
+        return first_number2+second_number2
 
 
-    def difference(first_number, second_number):
-        if first_number > second_number:
-            return first_number - second_number
-        if first_number<second_number:
-            return second_number - first_number
+    def difference(first_number3, second_number3):
+        if first_number3 > second_number3:
+            return first_number3 - second_number3
+        if first_number3<second_number3:
+            return second_number3 - first_number3
 
 
-    def subtraction(first_number, second_number):
-        return first_number - second_number
+    def subtraction(first_number4, second_number4):
+        return first_number4 - second_number4
 
 
-    def multiplication(first_number,second_number):
-        return first_number*second_number
+    def multiplication(first_number5,second_number5):
+        return first_number5*second_number5
 
 
-    def division(first_number,second_number):
-        return first_number/second_number
+    def division(first_number6,second_number6):
+        return first_number6/second_number6
 
 
 
@@ -158,7 +158,7 @@ while 1 > 0:
                  13. secant
                  14. cosecant 
                   ''')
-            function = eval(input(' Please enter the function you want to evaluate:')).lower()
+            function = eval(input(' Please enter the function you want to evaluate:'))
             number = eval(input('Enter the number:'))
             if function == 'ceiling function' :
                 print(ceil(number))
@@ -182,11 +182,11 @@ while 1 > 0:
                 print(sin(number))
             elif function == 'tan' :
                 print(tan(number))
-            elif function == 'cot' or 'cotangent':
+            elif function == 'cot' :
                 print(cot(number))
-            elif function == 'sec' or 'secant':
+            elif function == 'sec' :
                 print(sec(number))
-            elif function == 'cosec' or 'cosecant':
+            elif function == 'cosec' :
                 print(cosec(number))
             else:
                 print('Invalid function')
